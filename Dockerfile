@@ -1,5 +1,7 @@
 FROM ubuntu:18.04
 
+WORKDIR /opt
+
 RUN : "apt update" && \
     apt-get update -y && \
     apt upgrade -y && \
