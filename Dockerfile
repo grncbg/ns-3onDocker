@@ -126,3 +126,7 @@ RUN : "apt update" && \
     cd ns-allinone-3.29 && \
     ./build.py --enable-examples --enable-tests && \
     ln -s /opt/ns-allinone-3.29/ns-3.29/ /opt/ns3 && \
+    : "clean" && \
+    apt clean && \
+    rm -rf /var/lib/apt && \
+    rm /opt/ns-allinone-3.29.tar.bz2
