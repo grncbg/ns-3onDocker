@@ -1,4 +1,4 @@
-NAME=teapot/ns3
+NAME = teapot/ns3
 
 .PHONY: build
 build: Dockerfile
