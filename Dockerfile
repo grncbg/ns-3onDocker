@@ -100,6 +100,7 @@ RUN : "apt update" && \
         libclang-dev \
         llvm-dev \
         python-pip \
+        python-setuptools \
         python3-pip \
     && \
     pip install cxxfilt \
