@@ -117,4 +117,8 @@ RUN : "apt update" && \
     : "openflow module" && \
     apt install -y --no-install-recommends \
         libboost-signals-dev \
-        libboost-filesystem-dev
+        libboost-filesystem-dev \
+    && \
+    : "fetch ns3" && \
+    wget https://www.nsnam.org/releases/ns-allinone-3.29.tar.bz2 && \
+    tar -xf ns-allinone-3.29.tar.bz2
