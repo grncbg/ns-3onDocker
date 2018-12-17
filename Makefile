@@ -2,7 +2,7 @@ NAME=teapot/ns3
 
 .PHONY: build
 build: Dockerfile
-	docker build -t $(NAME)
+	docker build -t $(NAME) .
 
 .PHONY: run
 run:
